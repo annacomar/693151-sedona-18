@@ -3,15 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <title>Фото | Седона</title>
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="#" width="102" height="83" alt="Седона">
+      </a>
+      <button aria-label="Открыть меню" class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item--active">
+        <li class="site-list__item site-list__item--active">
           <a>Главная</a>
         </li>
         <li class="site-list__item">
@@ -21,61 +24,78 @@
           <a href="form.html">Форма Отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </nav>
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="102" height="83" alt="Седона">
-    </a>
-    <img class="page-header__background--background-image" src="#" width="321" height="389" alt="Вид города Седона">
-    <img class="page-header__background--background-text" src="#" width="281" height="214" alt="Слоган города Седона">
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">СЕДОНА — городок в АРИЗОНЕ. Фото.</h1>
-    <section class="photos">
-      <header class="photos__header">
-        <h2 class="visually-hidden">Красивые фото Седоны </h2>
-        <b class="advantages__title">Фото и видео</b>
-        <p class="advantages__argument">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </p>
-      </header>
-      <ul class="photos__list">
-        <li class="photos__item">
-          <a class="photos__image"><img src="img/photo-1-mobile-jpg.png" width="280" height="280" alt="Неродные просторы"></a>
-          <h3 class="photos__title">неродные просторы</h3>
-          <p class="photos__author">Автор фото: Борис</p>
-          <b class="photos__title--likes">1350</b>
+    <section class="intro">
+      <img class="page-header__sedona-image" src="#" width="321" height="389" alt="Вид города Седона">
+      <img class="page-header__sedona-text" src="#" width="281" height="214" alt="Слоган города Седона">
+      <h1 class="visually-hidden">СЕДОНА — городок в Аризоне. Фото.</h1>
+      <b class="intro__title">Фото и видео</b>
+      <p class="intro__text">
+        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+      </p>
+    </section>
+
+    <section class="catalog">
+      <ul class="catalog__list">
+        <li class="catalog__item photo">
+          <a class="photo__image">
+            <img src="img/photo-1-mobile-jpg.png" width="280" height="280" alt="Неродные просторы">
+          </a>
+          <h3 class="photo__title">Неродные просторы</h3>
+          <p class="photo__author">Автор фото: Борис</p>
+          <div class="likes">
+            <button class="likes__button"></button>
+            <b class="likes__title">1350</b>
+          </div>
         </li>
-        <li class="photos__item">
-          <a class="photo__sedona"><img src="img/photo-2-mobile-jpg.png" width="280" height="280" alt="Местная растительность"></a>
-          <h3 class="photos__title">Местная растительность</h3>
-          <p class="photos__author">Автор фото: Сергей</p>
-          <b class="photos__title--likes">143</b>
+        <li class="catalog__item photo">
+          <a class="photo__image">
+            <img src="img/photo-2-mobile-jpg.png" width="280" height="280" alt="Местная растительность">
+          </a>
+          <h3 class="photo__title">Местная растительность</h3>
+          <p class="photo__author">Автор фото: Сергей</p>
+          <div class="likes">
+            <button class="likes__button"></button>
+            <b class="likes__title">143</b>
+          </div>
         </li>
-        <li class="photos__item">
-          <a class="photo__sedona"><img src="img/photo-3-mobile-jpg.png" width="280" height="280" alt="Дорога на север"></a>
-          <h3 class="photos__title">Дорога на север
+        <li class="catalog__item photo">
+          <a class="photo__image">
+            <img src="img/photo-3-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
+          </a>
+          <h3 class="photo__title">Дорога на север
           </h3>
-          <p class="photos__author">Автор фото: Петр</p>
-          <b class="photos__title--likes">96</b>
+          <p class="photo__author">Автор фото: Петр</p>
+          <div class="likes">
+            <button class="likes__button"></button>
+            <b class="likes__title">96</b>
+          </div>
         </li>
-        <li class="photos__item">
-          <a class="photo__sedona"><img src="img/photo-4-mobile-jpg.png" width="280" height="280" alt="Мост дьявола"></a>
-          <h3 class="photos__title">Мост дьявола
+        <li class="catalog__item photo">
+          <a class="photo__image">
+            <img src="img/photo-4-mobile-jpg.png" width="280" height="280" alt="Мост дьявола">
+          </a>
+          <h3 class="photo__title">Мост дьявола
           </h3>
-          <p class="photos__author">Автор фото: Антон</p>
-          <b class="photos__title--likes">254</b>
+          <p class="photo__author">Автор фото: Антон</p>
+          <div class="likes">
+            <button class="likes__button"></button>
+            <b class="likes__title">254</b>
+          </div>
         </li>
       </ul>
     </section>
 
     <section class="video">
       <h3 class="visually-hidden">Видеопрезентация Седоны</h3>
-      <b class="advantages__title">Все еще сомневаетесь?</b>
-      <p class="advantages__argument">
+      <b class="video__title">Все ещё сомневаетесь?</b>
+      <p class="video__argument">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
     </section>
@@ -84,7 +104,8 @@
   <footer class="page-footer">
     <img src="#" width="320" height="350" alt="Седона на карте">
     <b class="tag">#visitSEDONA</b>
-    <div class="page-footer__social social">
+    <section class="page-footer__social social">
+      <h3 class="visually-hidden">Седона в соцсетях</h3>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в В Твиттере</a>
@@ -96,11 +117,13 @@
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube</a>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <b>Разработано</b>
-    <a href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="#" width="27" height="34" alt="HTML и CSS, уровень 2"></a>
+    <div class="made-by">
+      <b>Разработано</b>
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="#" width="27" height="34" alt="HTML и CSS, уровень 2"></a>
+    </div>
   </footer>
 </body>
 
