@@ -38,14 +38,76 @@
       <h1 class="intro__title">Оставьте свой отзыв</h1>
       <p class="intro__text">
         Помогите нашим отелям стать лучше!
-        оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        Оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </section>
 
     <section class="form">
-      <h2 class="visually-hidden">Форма отзыв</h2>
-      <!-- Форма, верстать позже-->
-
+      <h2 class="visually-hidden">Форма отзыва</h2>
+      <h3 class="form__title">Представьтесь:</h3>
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="name">Имя*:</label>
+          <input id="name" type="text" name="name" value="" placeholder="Петр">
+        </p>
+        <p>
+          <label for="surname">Фамилия*:</label>
+          <input id="surname" type="text" name="surname" value="" placeholder="Иванов">
+        </p>
+        <p>
+          <label for="patronymic">Отчество:</label>
+          <input id="patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
+        </p>
+        <h3 class="form__title">Контактная информация:</h3>
+        <p>
+          <label for="tel">Контактный телефон*:</label>
+          <input id="tel" type="tel" name="tel" value="" placeholder="Введите телефон">
+        </p>
+        <p>
+          <label for="email">Электронная почта*:</label>
+          <input id="email" type="email" name="email" value="" placeholder="Введите e-mail">
+          <fieldset>
+            <legend class="form__title">Ваше общее впечатление:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="impression" value="positive" checked>
+                Скорее положительное
+              </li>
+              <li>
+                <input type="radio" name="impression" value="negative">
+                Скорее отрицательное
+              </li>
+              <li>
+                <input type="radio" name="impression" value="dont-know">
+                Затрудняюсь ответить
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="form__title">Посещенные достопримечательности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="devils-bridge" id="filter-devils-bridge" checked>
+                <label for="filter-devils-bridge">Мост Дьявола</label>
+              </li>
+              <li>
+                <input type="checkbox" name="mountain-bell" id="filter-mountain-bell" checked>
+                <label for="filter-mountain-bell">Гора-Колокол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="slide-park" id="filter-slide-park" checked>
+                <label for="filter-slide-park">Слайд-парк</label>
+              </li>
+              <li>
+                <input type="checkbox" name="red-cliffs" id="filter-red-cliffs">
+                <label for="filter-red-cliffs">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <h3 class="form__title">Опишите свои эмоции:</h3>
+          <textarea id="emotions" name="emotions" rows="5">Опишите подробно все свои восторги</textarea>
+          <label for="emotions"></label>
+      </form>
     </section>
   </main>
 
