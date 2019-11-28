@@ -49,7 +49,7 @@
           <h3 class="photo__title">Неродные просторы</h3>
           <p class="photo__author">Автор фото: Борис</p>
           <div class="photo__likes likes">
-            <button class="photo__likes likes__button"></button>
+            <button class="photo__likes likes__button" type="button"></button>
             <b class="photo__likes likes__title">1350</b>
           </div>
         </li>
@@ -60,7 +60,7 @@
           <h3 class="photo__title">Местная растительность</h3>
           <p class="photo__author">Автор фото: Сергей</p>
           <div class="photo__likes likes">
-            <button class="photo__likes likes__button"></button>
+            <button class="photo__likes likes__button" type="button"></button>
             <b class="photo__likes likes__title">143</b>
           </div>
         </li>
@@ -72,7 +72,7 @@
           </h3>
           <p class="photo__author">Автор фото: Петр</p>
           <div class="photo__likes likes">
-            <button class="photo__likes likes__button"></button>
+            <button class="photo__likes likes__button" type="button"></button>
             <b class="photo__likes likes__title">96</b>
           </div>
         </li>
@@ -84,7 +84,7 @@
           </h3>
           <p class="photo__author">Автор фото: Антон</p>
           <div class="photo__likes likes">
-            <button class="photo__likes likes__button"></button>
+            <button class="photo__likes likes__button" type="button"></button>
             <b class="photo__likes likes__title">254</b>
           </div>
         </li>
@@ -97,7 +97,17 @@
       <p class="video__argument">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <img src="#" width="321" height="201" alt="Видеопрезентация Седоны">
+      <div class="video__wrapper">
+        <img src="#" width="321" height="201" alt="Видеопрезентация Седоны">
+        <div class="video__scroller">
+          <button class="video__scroller video__scroller--button" type="button"></button>
+        </div>
+        <div class="video__interface">
+          <button class="video__replay" type="submit"></button>
+          <button class="video__subtitles" type="button"></button>
+          <button class="video__fullscreen" type="button"></button>
+        </div>
+      </div>
     </section>
   </main>
 
