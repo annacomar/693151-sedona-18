@@ -38,19 +38,86 @@
       <h1 class="intro__title">Оставьте свой отзыв</h1>
       <p class="intro__text">
         Помогите нашим отелям стать лучше!
-        оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        Оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </section>
 
-    <section class="form">
-      <h2 class="visually-hidden">Форма отзыв</h2>
-      <!-- Форма, верстать позже-->
-
+    <section class="feedback">
+      <h2 class="visually-hidden">Форма отзыва</h2>
+      <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend class="feedback__form-title">Представьтесь:</legend>
+          <p>
+            <label class="feedback__form-label" for="name">Имя*:</label>
+            <input class="feedback__form-input background-input" id="name" type="text" name="name" value="" placeholder="Петр">
+          </p>
+          <p>
+            <label class="feedback__form-label" for="surname">Фамилия*:</label>
+            <input class="feedback__form-input background-input" id="surname" type="text" name="surname" value="" placeholder="Иванов">
+          </p>
+          <p>
+            <label class="feedback__form-label" for="patronymic">Отчество:</label>
+            <input class="feedback__form-input background-input" id="patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend class="feedback__form-title">Контактная информация:</legend>
+          <p>
+            <label class="feedback__form-label" for="tel">Контактный телефон*:</label>
+            <input class="feedback__form-input background-input" id="tel" type="tel" name="tel" value="" placeholder="Введите телефон">
+          </p>
+          <p>
+            <label class="feedback__form-label" for="email">Электронная почта*:</label>
+            <input class="feedback__form-input background-input" id="email" type="email" name="email" value="" placeholder="Введите e-mail">
+        </fieldset>
+        <fieldset>
+          <legend class="feedback__form-title">Ваше общее впечатление:</legend>
+          <ul>
+            <li>
+              <label class="feedback__form-label label-relative" for="positive-impression">Скорее положительное</label>
+              <input class="feedback__form-input" id="positive-impression" type="radio" name="impression" value="positive" checked>
+            </li>
+            <li>
+              <label class="feedback__form-label label-relative" for="negative-impression">Скорее отрицательное</label>
+              <input class="feedback__form-input" id="negative-impression" type="radio" name="impression" value="negative">
+            </li>
+            <li>
+              <label class="feedback__form-label label-relative" for="dont-know-impression">Затрудняюсь ответить</label>
+              <input class="feedback__form-input" id="dont-know-impression" type="radio" name="impression" value="dont-know">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="feedback__form-title">Посещенные достопримечательности:</legend>
+          <ul>
+            <li>
+              <input class="feedback__form-input" type="checkbox" name="devils-bridge" id="filter-devils-bridge" checked>
+              <label class="feedback__form-label label-relative" for="filter-devils-bridge">Мост Дьявола</label>
+            </li>
+            <li>
+              <input class="feedback__form-input" type="checkbox" name="mountain-bell" id="filter-mountain-bell" checked>
+              <label class="feedback__form-label label-relative" for="filter-mountain-bell">Гора-Колокол</label>
+            </li>
+            <li>
+              <input class="feedback__form-input" type="checkbox" name="slide-park" id="filter-slide-park" checked>
+              <label class="feedback__form-label label-relative" for="filter-slide-park">Слайд-парк</label>
+            </li>
+            <li>
+              <input class="feedback__form-input" type="checkbox" name="red-cliffs" id="filter-red-cliffs">
+              <label class="feedback__form-label label-relative" for="filter-red-cliffs">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="feedback__form-title">Опишите свои эмоции:</legend>
+          <textarea class="feedback__form-label background-input" id="emotions" name="emotions" rows="5">Опишите подробно все свои восторги</textarea>
+        </fieldset>
+        <button class="send-review__show button" type="submit">Отправить отзыв</button>
+      </form>
     </section>
   </main>
 
   <footer class="page-footer">
-    <img src="#" width="320" height="350" alt="Седона на карте">
     <b class="tag">#visitsedona</b>
     <section class="page-footer__social social">
       <h3 class="visually-hidden">Седона в соцсетях</h3>
