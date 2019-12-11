@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title> Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,16 +16,16 @@
       <button aria-label="Открыть меню" class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фото и видео</a>
+          <a class="site-list__link" href="photo.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Форма Отзыва</a>
+          <a class="site-list__link" href="form.html">Форма Отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -41,7 +42,7 @@
 
     <section class="advantages">
       <ul class="advantages__list">
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--lightblue">
           <h2 class="advantages__title advantages__title--white">Настоящий городок</h2>
           <span class="advantages__number advantages__number--white">— №1 —</span>
           <p class="advantages__argument advantages__argument--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -59,28 +60,28 @@
 
         <li class="advantages__item advantages__item--food">
           <h3 class="advantages__title">Еда</h3>
-          <p class="advantages__argument">Всегда заказывайте Фирменный бургер, Вы НЕ разочаруетесь!</p>
+          <p class="advantages__argument">Всегда заказывайте Фирменный бургер, Вы не разочаруетесь!</p>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--lightblue">
           <h3 class="advantages__title advantages__title--white">Там есть Мост дьявола</h3>
           <span class="advantages__number advantages__number--white">— №2 —</span>
           <p class="advantages__argument advantages__argument--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--grey">
           <h3 class="advantages__title"> Небольшая площадь</h3>
           <span class="advantages__number">— №3 —</span>
           <p class="advantages__argument">Все интересные места находятся очень близко</p>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--grey">
           <h3 class="advantages__title">Красивая дорога</h3>
           <span class="advantages__number">— №4 —</span>
           <p class="advantages__argument">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--grey">
           <h3 class="advantages__title">Мало туристов</h3>
           <span class="advantages__number">— №5 —</span>
           <p class="advantages__argument">Большинство едет в Гранд каньон и толпится там</p>
@@ -115,8 +116,8 @@
     </section>
 
     <div class="made-by">
-      <b>Разработано</b>
-      <a href="https://htmlacademy.ru/intensive/adaptive">
+      <b class="made-by__title">Разработано</b>
+      <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="#" width="27" height="34" alt="HTML и CSS, уровень 2"></a>
     </div>
   </footer>

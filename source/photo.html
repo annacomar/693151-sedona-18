@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Фото | Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,16 +16,16 @@
       <button aria-label="Открыть меню" class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фото и видео</a>
+          <a class="site-list__link" href="photo.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Форма Отзыва</a>
+          <a class="site-list__link" href="form.html">Форма Отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -100,12 +101,12 @@
       <div class="video__wrapper">
         <img src="#" width="321" height="201" alt="Видеопрезентация Седоны">
         <div class="video__scroller">
-          <button class="video__scroller video__scroller--button" type="button"></button>
+          <button aria-label="Промотать видео вперед или назад" class="video__scroller video__scroller--button" type="button"></button>
         </div>
         <div class="video__interface">
-          <button class="video__replay" type="submit"></button>
-          <button class="video__subtitles" type="button"></button>
-          <button class="video__fullscreen" type="button"></button>
+          <button aria-label="Просмотреть снова" class="video__replay" type="submit"></button>
+          <button aria-label="Включить субтитры" class="video__subtitles" type="button"></button>
+          <button aria-label="На полный экран" class="video__fullscreen" type="button"></button>
         </div>
       </div>
     </section>
