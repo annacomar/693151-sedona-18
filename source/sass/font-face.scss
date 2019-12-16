@@ -1,21 +1,17 @@
 @font-face {
-  font-family: 'Awesome Font';
+  font-family: 'PT Sans' sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: local('Awesome Font'),
+  src: local('PT Sans'),
        url('/fonts/awesome.woff2') format('woff2'),
        url('/fonts/awesome.woff') format('woff'),
-       url('/fonts/awesome.ttf') format('ttf'),
-       url('/fonts/awesome.eot') format('eot');
 }
 
 @font-face {
-  font-family: 'Awesome Font';
+  font-family: 'PT Sans', sans-serif;
   font-style: italic;
   font-weight: 400;
-  src: local('Awesome Font Italic'),
+  src: local('PT Sans'),
        url('/fonts/awesome-i.woff2') format('woff2'),
        url('/fonts/awesome-i.woff') format('woff'),
-       url('/fonts/awesome-i.ttf') format('ttf'),
-       url('/fonts/awesome-i.eot') format('eot');
 }

@@ -1,12 +1,25 @@
-@import "page-header.scss";
-@import "main-nav.scss";
-@import "site-list.scss";
-@import "promo.scss";
-@import "advantages.scss";
-@import "search-hotel.scss";
-@import "page-footer";
-@import "social.scss";
-@import "made-by.scss";
-@import "button.scss";
-@import "intro.scss";
-@import "photo.scss";
+
+/*body */
+@import "base/body.scss";
+@import "base/font-face.scss";
+@import "base/mixins.scss";
+@import "base/variables.scss";
+
+/*global*/
+@import "global/main-nav.scss";
+@import "global/page-header.scss";
+@import "global/page-footer.scss";
+@import "global/button.scss";
+
+/*blocks*/
+@import "blocks/advantages.scss";
+@import "blocks/intro.scss";
+@import "blocks/made-by.scss";
+@import "blocks/photo.scss";
+@import "blocks/promo.scss";
+@import "blocks/search-hotel.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";
+
+/*libs*/
+@import "libs/normalize.scss";
