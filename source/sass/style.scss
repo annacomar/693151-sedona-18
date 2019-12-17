@@ -1,9 +1,17 @@
+/*libs*/
+@import "libs/normalize.scss";
+
+/*variables*/
+@import "base/variables.scss";
+
+/*mixins*/
+@import "base/mixins.scss";
+
+/*font-face*/
+@import "base/font-face.scss";
 
 /*body */
 @import "base/body.scss";
-@import "base/font-face.scss";
-@import "base/mixins.scss";
-@import "base/variables.scss";
 
 /*global*/
 @import "global/main-nav.scss";
@@ -20,6 +28,3 @@
 @import "blocks/search-hotel.scss";
 @import "blocks/site-list.scss";
 @import "blocks/social.scss";
-
-/*libs*/
-@import "libs/normalize.scss";

@@ -2,8 +2,8 @@
   background-color: white;
   text-align: center;
 }
+
 .search-hotel__title {
-  font-family: PTSans;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
@@ -12,16 +12,14 @@
 }
 
 .search-hotel__text {
-  font-family: PTSans;
   font-size: 14px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   color: #333333;
-  line-height: 24px;
 }
 
 .search-hotel__show {
-  font-family: PTSans;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
