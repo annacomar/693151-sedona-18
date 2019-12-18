@@ -1,0 +1,30 @@
+/*libs*/
+@import "libs/normalize.scss";
+
+/*variables*/
+@import "base/variables.scss";
+
+/*mixins*/
+@import "base/mixins.scss";
+
+/*font-face*/
+@import "base/font-face.scss";
+
+/*body */
+@import "base/body.scss";
+
+/*global*/
+@import "global/main-nav.scss";
+@import "global/page-header.scss";
+@import "global/page-footer.scss";
+@import "global/button.scss";
+
+/*blocks*/
+@import "blocks/advantages.scss";
+@import "blocks/intro.scss";
+@import "blocks/made-by.scss";
+@import "blocks/photo.scss";
+@import "blocks/promo.scss";
+@import "blocks/search-hotel.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";

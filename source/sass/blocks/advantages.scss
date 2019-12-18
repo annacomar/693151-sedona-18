@@ -1,0 +1,42 @@
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__item {
+  background-color: white;
+  text-align: center;
+
+  &--lightblue {
+    background-color: #81b3d2;
+  }
+
+  &--grey {
+    background-color: #e6e6e6;
+  }
+}
+
+.advantages__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+
+  &--white {
+    color: #ffffff;
+  }
+}
+
+.advantages__number,
+.advantages__argument {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+
+  &--white {
+    color: #ffffff;
+  }
+}
