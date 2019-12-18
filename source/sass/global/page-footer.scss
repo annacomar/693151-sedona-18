@@ -2,3 +2,72 @@
   background-color: white;
   text-align: center;
 }
+
+.page-footer__wrapper {
+  width: 320px;
+  margin: 10px auto 0;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  /* Временно для сетки */
+  min-height: 233px;
+}
+
+.page-footer__tag {
+  margin: 0 auto;
+  width: 136px;
+  margin-bottom: 41px;
+  /* Временно для сетки */
+  min-height: 16px;
+}
+
+.page-footer__social {
+  display: flex;
+  width: 140px;
+  margin: 0 auto 40px;
+  /* Временно для сетки */
+  min-height: 48px;
+}
+
+.social__list {
+  margin-right: 6px;
+  justify-content: space-between;
+}
+
+.social__list:last-child {
+  margin-right: 0;
+}
+
+.made-by {
+  display: flex;
+  width: 140px;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-bottom: 23px;
+  /* Временно для сетки */
+  min-height: 34px;
+}
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 786px;
+    margin-top: 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    /* Временно для сетки */
+    min-height: 120px;
+  }
+
+  .page-footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 1200px;
+    /* Временно для сетки */
+    min-height: 120px;
+  }
