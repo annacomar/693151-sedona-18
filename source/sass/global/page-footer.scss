@@ -65,9 +65,11 @@
     width: 648px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .page-footer__wrapper {
     width: 1200px;
     /* Временно для сетки */
     min-height: 120px;
   }
+}
