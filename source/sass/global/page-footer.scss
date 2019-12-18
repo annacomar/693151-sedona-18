@@ -8,6 +8,7 @@
   margin: 10px auto 0;
   padding-top: 30px;
   padding-bottom: 35px;
+
   /* Временно для сетки */
   min-height: 233px;
 }
@@ -46,7 +47,7 @@
   /* Временно для сетки */
   min-height: 34px;
 }
-@media (min-width: @tablet-width) {
+@media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +67,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1200px;
     /* Временно для сетки */

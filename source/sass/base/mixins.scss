@@ -30,3 +30,14 @@
   text-transform: uppercase;
   color: #333333;
 }
+
+@mixin wrapper-mobile {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+/*
+@mixin wrapper-desktop {
+
+}
+то же самое для планшета и мобильного*/
