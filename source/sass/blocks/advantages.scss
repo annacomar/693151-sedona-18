@@ -15,6 +15,13 @@
   }
 }
 
+.advantages__item--lightblue:first-child {
+  padding: 61px 27px 45px 28px;
+  margin-bottom: 33px;
+}
+
+.advantages__item--housing {}
+
 .advantages__title {
   font-size: 18px;
   font-weight: bold;
@@ -28,8 +35,8 @@
   }
 }
 
-.advantages__number,
-.advantages__argument {
+.advantages__argument,
+.advantages__number {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -38,5 +45,39 @@
 
   &--white {
     color: #ffffff;
+  }
+}
+
+.advantages__item--grey {
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.advantages__item--grey:last-child {
+ margin-bottom: 42px;
+}
+
+.advantages__wrapper:nth-child(4) {
+  background-color:$grey;
+}
+
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+   display: flex;
+  }
+  .advantages__item--grey {
+   display: flex;
+   margin-right: 110px;
+   justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+   display: flex;
+  }
+  .advantages__item--grey {
+   display: flex;
+   margin-right: 130px;
   }
 }

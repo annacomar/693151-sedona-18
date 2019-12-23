@@ -1,6 +1,8 @@
 .search-hotel {
   background-color: white;
   text-align: center;
+  padding-top: 33px;
+  margin: 0 auto 50px;
 }
 
 .search-hotel__title {
@@ -26,4 +28,17 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+ .search-hotel {
+  padding-top: 57px;
+  margin: 0 auto 58px;
+ }
+}
+@media (min-width: $desktop-width) {
+  .search-hotel {
+    padding-top: 57px;
+    margin: 0 auto 66px;
+  }
 }

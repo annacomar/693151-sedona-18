@@ -3,11 +3,32 @@
   text-align: center;
 }
 
+.promo__wrapper {
+  width: 320px;
+  height: 389px;
+  margin: 0 auto;
+}
+
+.promo__image {
+  order: 2;
+}
+
+.promo__slogan {
+  margin: 0 auto;
+}
+
+.promo__text {
+  padding-top: 43px;
+  margin: 0 auto 33px;
+}
+
 .promo__title {
   font-size: 18px;
+  text-align: center;
   font-weight: bold;
   color: #000000;
   line-height: 26px;
+  text-transform: uppercase;
 }
 
 .promo__argument {
@@ -15,4 +36,29 @@
   text-align: center;
   color: #333333;
   line-height: 26px;
+  text-transform: uppercase;
+}
+@media (min-width: $tablet-width) {
+  .promo__text {
+    padding-top: 51px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  .promo__title  {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__text {
+    padding-top: 51px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  .promo__title  {
+    margin-bottom: 40px;
+  }
+
 }

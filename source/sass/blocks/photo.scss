@@ -18,7 +18,32 @@
 .photo__likes {
   font-size: 14px;
   font-weight: bold;
-  /*line-height*/
+  line-height: 24px;
   text-align: left;
   color: #000000;
 }
+
+.photo__wrapper {
+  padding-top: 22px;
+  padding-bottom: 23px;
+  margin-left: 20px;
+  margin-right: 120px;
+}
+@media (min-width: $tablet-width) {
+  .photo__wrapper {
+    display: flex;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    justify-content: space-between;
+    background-color: $white-greyish;
+  }
+
+  .photo__wrapper:nth-child(3) {
+    background-color: $white-seven;
+  }
+}
+@media (min-width: $desktop-width) {
+  .photo__wrapper {
+    display: flex;
+    /*transparent?? captions on the photo???*/
+  }
