@@ -23,6 +23,7 @@
 }
 
 .promo__title {
+  @include reset-text;
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -32,6 +33,7 @@
 }
 
 .promo__argument {
+  @include reset-text;
   font-size: 14px;
   text-align: center;
   color: #333333;
@@ -46,6 +48,7 @@
   }
 
   .promo__title  {
+    @include reset-text;
     margin-bottom: 40px;
   }
 }
@@ -58,6 +61,7 @@
   }
 
   .promo__title  {
+    @include reset-text;
     margin-bottom: 40px;
   }
 

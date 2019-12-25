@@ -34,11 +34,11 @@
   <main class="page-main">
 
     <section class="intro">
-      <div class="intro__wrapper--image">
+      <div class="intro__wrapper-image">
         <img class="intro__image" src="#" width="320" height="389" alt="Вид города Седона">
         <img class="intro__slogan" src="#" width="281" height="214" alt="Слоган города Седона">
       </div>
-      <div class="intro__wrapper--text">
+      <div class="intro__wrapper-text">
         <h1 class="intro__title">Оставьте свой отзыв</h1>
         <p class="intro__text">
           Помогите нашим отелям стать лучше!
@@ -50,7 +50,7 @@
     <section class="feedback">
       <h2 class="visually-hidden">Форма отзыва</h2>
       <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="feedback__fieldset">
           <legend class="feedback__title">Представьтесь:</legend>
           <p>
             <label class="feedback__label" for="name">Имя*:</label>
@@ -65,8 +65,8 @@
             <input class="feedback__input feedback__input--grey" id="patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
           </p>
         </fieldset>
-        <fieldset>
-          <legend class="feedback__title">Контактная информация:</legend>
+        <fieldset class="feedback__fieldset--contact-information">
+          <legend class="feedback__title--contact-information">Контактная информация:</legend>
           <p>
             <label class="feedback__label" for="tel">Контактный телефон*:</label>
             <input class="feedback__input feedback__input--grey" id="tel" type="tel" name="tel" value="" placeholder="Введите телефон">
@@ -75,9 +75,10 @@
             <label class="feedback__label" for="email">Электронная почта*:</label>
             <input class="feedback__input feedback__input--grey" id="email" type="email" name="email" value="" placeholder="Введите e-mail">
         </fieldset>
-        <fieldset>
-          <legend class="feedback__title">Ваше общее впечатление:</legend>
-          <ul>
+
+        <fieldset class="feedback__fieldset--your-impressions">
+          <legend class="feedback__title--your-impressions">Ваше общее впечатление:</legend>
+          <ul class="feedback__list">
             <li>
               <label class="feedback__label label-relative" for="positive-impression">Скорее положительное</label>
               <input class="feedback__input feedback__input--radio" id="positive-impression" type="radio" name="impression" value="positive" checked>
@@ -92,9 +93,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend class="feedback__title">Посещенные достопримечательности:</legend>
-          <ul>
+        <fieldset class="feedback__fieldset--sightseengs-visited">
+          <legend class="feedback__title--sightseengs-visited">Посещенные достопримечательности:</legend>
+          <ul class="feedback__list">
             <li>
               <input class="feedback__input" type="checkbox" name="devils-bridge" id="filter-devils-bridge" checked>
               <label class="feedback__label feedback__input--checkbox" for="filter-devils-bridge">Мост Дьявола</label>
@@ -113,8 +114,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend class="feedback__title">Опишите свои эмоции:</legend>
+        <fieldset class="feedback__fieldset--your-emotions">
+          <legend class="feedback__title--your-emotions">Опишите свои эмоции:</legend>
           <textarea class="feedback__label feedback__input--grey" id="emotions" name="emotions" rows="5">Опишите подробно все свои восторги</textarea>
         </fieldset>
         <button class="send-review__show button" type="submit">Отправить отзыв</button>
@@ -141,8 +142,8 @@
       </section>
 
       <div class="made-by">
-        <b>Разработано</b>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+        <b class="made-by__title">Разработано</b>
+        <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="#" width="27" height="34" alt="HTML и CSS, уровень 2"></a>
       </div>
     </div>

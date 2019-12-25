@@ -36,8 +36,12 @@
   margin: 0 auto;
 }
 
-/*
-@mixin wrapper-desktop {
-
+@mixin wrapper-tablet {
+  width: $tablet-width;
+  margin: 0 auto;
 }
-то же самое для планшета и мобильного*/
+
+@mixin wrapper-desktop {
+  width: $desktop-width;
+  margin: 0 auto;
+}

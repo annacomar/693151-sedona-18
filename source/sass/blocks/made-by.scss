@@ -1,4 +1,5 @@
 .made-by__title {
+  @include reset-text;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;

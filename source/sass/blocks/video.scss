@@ -5,6 +5,7 @@
 }
 
 .video__title {
+  @include reset-text;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -12,6 +13,7 @@
 }
 
 .video__argument {
+  @include reset-text;
   font-size: 14px;
   line-height: 24px;
   text-align: center;

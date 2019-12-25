@@ -1,25 +1,8 @@
+.site-list {
+  @include reset-list;
+}
+
 .site-list__link {
   text-decoration: none;
   color: white;
 }
-
-@media (min-width: $tablet-width) {
-
-  .site-list__link--left:first-child {
-    order: 1;
-  }
-
-  .site-list__link--left:nth-child(2) {
-    order: 2;
-  }
-
-  @media (min-width: $desktop-width) {
-
-    .site-list__link--left:first-child {
-      order: 1;
-    }
-
-    .site-list__link--left:nth-child(2) {
-      order: 2;
-    }
-  }

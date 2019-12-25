@@ -6,6 +6,7 @@
 }
 
 .search-hotel__title {
+  @include reset-text;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
@@ -14,6 +15,7 @@
 }
 
 .search-hotel__text {
+  @include reset-text;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -29,12 +31,11 @@
   text-decoration: none;
   color: #ffffff;
 }
-
 @media (min-width: $tablet-width) {
- .search-hotel {
-  padding-top: 57px;
-  margin: 0 auto 58px;
- }
+  .search-hotel {
+    padding-top: 57px;
+    margin: 0 auto 58px;
+  }
 }
 @media (min-width: $desktop-width) {
   .search-hotel {
