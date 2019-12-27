@@ -31,17 +31,25 @@
   color: #333333;
 }
 
-@mixin wrapper-mobile {
+@mixin container-default {
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  background-color: $white;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+@mixin container-mobile {
   width: $mobile-width;
   margin: 0 auto;
 }
 
-@mixin wrapper-tablet {
+@mixin container-tablet {
   width: $tablet-width;
   margin: 0 auto;
 }
 
-@mixin wrapper-desktop {
+@mixin container-desktop {
   width: $desktop-width;
   margin: 0 auto;
 }

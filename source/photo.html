@@ -8,148 +8,150 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="102" height="83" alt="Седона">
-      </a>
-      <button aria-label="Открыть меню" class="main-nav__toggle" type="button"></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фото и видео</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Форма Отзыва</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <section class="intro">
-      <div class="intro__wrapper--image">
-        <img class="intro__image" src="#" width="320" height="389" alt="Вид города Седона">
-        <img class="intro__slogan" src="#" width="281" height="214" alt="Слоган города Седона">
-      </div>
-      <div class="intro__wrapper--text">
-        <h1 class="intro__title">Фото и видео</h1>
-        <p class="intro__text">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </p>
-    </section>
-
-    <section class="catalog">
-      <ul class="catalog__list">
-        <li class="catalog__item photo">
-          <a class="photo__image">
-            <img src="img/photo-1-mobile-jpg.png" width="280" height="280" alt="Неродные просторы">
-          </a>
-          <div class="photo__wrapper">
-            <h3 class="photo__title">Неродные просторы</h3>
-            <p class="photo__author">Автор фото: Борис</p>
-            <div class="photo__likes likes">
-              <button class="photo__likes likes__button" type="button"></button>
-              <b class="photo__likes likes__title">1350</b>
-            </div>
-          </div>
-        </li>
-        <li class="catalog__item photo">
-          <a class="photo__image">
-            <img src="img/photo-2-mobile-jpg.png" width="280" height="280" alt="Местная растительность">
-          </a>
-          <div class="photo__wrapper">
-            <h3 class="photo__title">Местная растительность</h3>
-            <p class="photo__author">Автор фото: Сергей</p>
-            <div class="photo__likes likes">
-              <button class="photo__likes likes__button" type="button"></button>
-              <b class="photo__likes likes__title">143</b>
-            </div>
-          </div>
-        </li>
-        <li class="catalog__item photo">
-          <a class="photo__image">
-            <img src="img/photo-3-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
-          </a>
-          <div class="photo__wrapper">
-            <h3 class="photo__title">Дорога на север
-            </h3>
-            <p class="photo__author">Автор фото: Петр</p>
-            <div class="photo__likes likes">
-              <button class="photo__likes likes__button" type="button"></button>
-              <b class="photo__likes likes__title">96</b>
-            </div>
-          </div>
-        </li>
-        <li class="catalog__item photo">
-          <a class="photo__image">
-            <img src="img/photo-4-mobile-jpg.png" width="280" height="280" alt="Мост дьявола">
-          </a>
-          <div class="photo__wrapper">
-            <h3 class="photo__title">Мост дьявола
-            </h3>
-            <p class="photo__author">Автор фото: Антон</p>
-            <div class="photo__likes likes">
-              <button class="photo__likes likes__button" type="button"></button>
-              <b class="photo__likes likes__title">254</b>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="video">
-      <h3 class="visually-hidden">Видеопрезентация Седоны</h3>
-      <div class="video__title--wrapper">
-        <b class="video__title">Все ещё сомневаетесь?</b>
-        <p class="video__argument">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
-      </div>
-      <div class="video__wrapper">
-        <img class="video__image" src="#" width="321" height="201" alt="Видеопрезентация Седоны">
-        <div class="video__scroller">
-          <button aria-label="Промотать видео вперед или назад" class="video__scroller video__scroller--button" type="button"></button>
-        </div>
-        <div class="video__interface">
-          <button aria-label="Просмотреть снова" class="video__replay" type="submit"></button>
-          <button aria-label="Включить субтитры" class="video__subtitles" type="button"></button>
-          <button aria-label="На полный экран" class="video__fullscreen" type="button"></button>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <b class="page-footer__tag">#visitsedona</b>
-      <section class="page-footer__social social">
-        <h3 class="visually-hidden">Седона в соцсетях</h3>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в В Твиттере</a>
+  <div class="container">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="#" width="102" height="83" alt="Седона">
+        </a>
+        <button aria-label="Открыть меню" class="main-nav__toggle" type="button"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube</a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="intro">
+        <div class="intro__wrapper--image">
+          <img class="intro__image" src="#" width="320" height="389" alt="Вид города Седона">
+          <img class="intro__slogan" src="#" width="281" height="214" alt="Слоган города Седона">
+        </div>
+        <div class="intro__wrapper--text">
+          <h1 class="intro__title">Фото и видео</h1>
+          <p class="intro__text">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+          </p>
+      </section>
+
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item photo">
+            <a class="photo__image">
+              <img src="img/photo-1-mobile-jpg.png" width="280" height="280" alt="Неродные просторы">
+            </a>
+            <div class="photo__wrapper">
+              <h3 class="photo__title">Неродные просторы</h3>
+              <p class="photo__author">Автор фото: Борис</p>
+              <div class="photo__likes likes">
+                <button class="photo__likes likes__button" type="button"></button>
+                <b class="photo__likes likes__title">1350</b>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item photo">
+            <a class="photo__image">
+              <img src="img/photo-2-mobile-jpg.png" width="280" height="280" alt="Местная растительность">
+            </a>
+            <div class="photo__wrapper">
+              <h3 class="photo__title">Местная растительность</h3>
+              <p class="photo__author">Автор фото: Сергей</p>
+              <div class="photo__likes likes">
+                <button class="photo__likes likes__button" type="button"></button>
+                <b class="photo__likes likes__title">143</b>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item photo">
+            <a class="photo__image">
+              <img src="img/photo-3-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
+            </a>
+            <div class="photo__wrapper">
+              <h3 class="photo__title">Дорога на север
+              </h3>
+              <p class="photo__author">Автор фото: Петр</p>
+              <div class="photo__likes likes">
+                <button class="photo__likes likes__button" type="button"></button>
+                <b class="photo__likes likes__title">96</b>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item photo">
+            <a class="photo__image">
+              <img src="img/photo-4-mobile-jpg.png" width="280" height="280" alt="Мост дьявола">
+            </a>
+            <div class="photo__wrapper">
+              <h3 class="photo__title">Мост дьявола
+              </h3>
+              <p class="photo__author">Автор фото: Антон</p>
+              <div class="photo__likes likes">
+                <button class="photo__likes likes__button" type="button"></button>
+                <b class="photo__likes likes__title">254</b>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
 
-      <div class="made-by">
-        <b class="made-by__title">Разработано</b>
-        <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="#" width="27" height="34" alt="HTML и CSS, уровень 2"></a>
+      <section class="video">
+        <h3 class="visually-hidden">Видеопрезентация Седоны</h3>
+        <div class="video__title--wrapper">
+          <b class="video__title">Все ещё сомневаетесь?</b>
+          <p class="video__argument">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+          </p>
+        </div>
+        <div class="video__wrapper">
+          <img class="video__image" src="#" width="321" height="201" alt="Видеопрезентация Седоны">
+          <div class="video__scroller">
+            <button aria-label="Промотать видео вперед или назад" class="video__scroller video__scroller--button" type="button"></button>
+          </div>
+          <div class="video__interface">
+            <button aria-label="Просмотреть снова" class="video__replay" type="submit"></button>
+            <button aria-label="Включить субтитры" class="video__subtitles" type="button"></button>
+            <button aria-label="На полный экран" class="video__fullscreen" type="button"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <b class="page-footer__tag tag">#visitsedona</b>
+        <section class="page-footer__social social">
+          <h3 class="visually-hidden">Седона в соцсетях</h3>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в В Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube</a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="made-by">
+          <b class="made-by__title">Разработано</b>
+          <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="#" width="27" height="34" alt="HTML и CSS, уровень 2"></a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>
