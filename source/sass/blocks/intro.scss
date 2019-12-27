@@ -22,6 +22,7 @@
   width: 229px;
   height: 39px;
 }
+
 .intro__wrapper-text {
   padding-top: 44px;
   margin: 0 auto 33px;
@@ -32,18 +33,20 @@
     width: 768px;
     height: 346px;
   }
-.intro__wrapper-text {
-  padding-top: 76px;
-  margin: 0 auto 75px;
+
+  .intro__wrapper-text {
+    padding-top: 76px;
+    margin: 0 auto 75px;
+  }
 }
 
-}
 @media (min-width: $desktop-width) {
   .intro__wrapper-image {
     width: 1200px;
     height: 357px;
   }
-  .intro__wrapper-text  {
+
+  .intro__wrapper-text {
     padding-top: 113px;
     margin: 0 auto 77px;
   }

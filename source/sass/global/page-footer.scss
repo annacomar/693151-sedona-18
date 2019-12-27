@@ -30,24 +30,6 @@
   min-height: 48px;
 }
 
-.social__list {
-  margin-right: 6px;
-  justify-content: space-between;
-}
-
-.social__list:last-child {
-  margin-right: 0;
-}
-
-.made-by {
-  display: flex;
-  width: 140px;
-  margin: 0 auto;
-  justify-content: space-around;
-  margin-bottom: 23px;
-  /* Временно для сетки */
-  min-height: 34px;
-}
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;

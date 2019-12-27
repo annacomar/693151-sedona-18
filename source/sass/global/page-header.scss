@@ -16,6 +16,7 @@
   height: 83px;
   order: 2;
 }
+
 @media (min-width: $tablet-width) {
   .page-header__logo {
     width: 187px;
@@ -23,6 +24,7 @@
     order: 3;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-header__logo {
     width: 188px;

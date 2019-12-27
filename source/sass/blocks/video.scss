@@ -30,6 +30,7 @@
   height: 66px;
   background-color: $white;
 }
+
 @media (min-width: $tablet-width) {
   .video__title--wrapper {
     padding-top: 68px;
@@ -48,6 +49,7 @@
     opacity: 0.6;
   }
 }
+
 @media (min-width: $desktop-width) {
   .video__title--wrapper {
     padding-top: 72px;

@@ -40,7 +40,6 @@
   line-height: 26px;
   text-align: center;
   padding-bottom: 25px;
-
 }
 
 .feedback__title--contact-information {
@@ -54,7 +53,6 @@
   text-align: center;
   padding-top: 24px;
   margin-bottom: 29px;
-
 }
 
 .feedback__title--your-impressions {
@@ -169,6 +167,7 @@
     margin-bottom: 60px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .feedback {
     padding-top: 70px;

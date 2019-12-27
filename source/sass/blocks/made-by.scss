@@ -1,3 +1,13 @@
+.made-by {
+  display: flex;
+  width: 140px;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-bottom: 23px;
+  /* Временно для сетки */
+  min-height: 34px;
+}
+
 .made-by__title {
   @include reset-text;
   font-size: 14px;

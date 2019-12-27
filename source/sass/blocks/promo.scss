@@ -40,14 +40,15 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
 @media (min-width: $tablet-width) {
   .promo__text {
     padding-top: 51px;
     margin: 0 auto;
     margin-bottom: 55px;
-  }
+ }
 
-  .promo__title  {
+  .promo__title {
     @include reset-text;
     margin-bottom: 40px;
   }
@@ -60,9 +61,8 @@
     margin-bottom: 55px;
   }
 
-  .promo__title  {
+  .promo__title {
     @include reset-text;
     margin-bottom: 40px;
   }
-
 }

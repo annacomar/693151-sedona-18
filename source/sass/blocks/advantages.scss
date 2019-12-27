@@ -12,6 +12,8 @@
 
   &--grey {
     background-color: #e6e6e6;
+    padding-top: 40px;
+    margin: 0 auto;
   }
 }
 
@@ -19,6 +21,7 @@
   padding: 61px 27px 45px 28px;
   margin-bottom: 33px;
 }
+
 .advantages__title {
   @include reset-text;
   font-size: 18px;
@@ -47,11 +50,6 @@
   }
 }
 
-.advantages__item--grey {
-  padding-top: 40px;
-  margin: 0 auto;
-}
-
 .advantages__item--grey:last-child {
   margin-bottom: 42px;
 }
@@ -60,6 +58,7 @@
   .advantages__text-wrapper {
     display: flex;
   }
+
   .advantages__item--grey {
     display: flex;
     margin-right: 110px;
@@ -71,6 +70,7 @@
   .advantages__text-wrapper {
     display: flex;
   }
+
   .advantages__item--grey {
     display: flex;
     margin-right: 130px;
