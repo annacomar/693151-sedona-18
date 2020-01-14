@@ -89,12 +89,12 @@
     display: flex;
   }
 
-  .advantages__item {
-    display: flex;
-  }
-
   .advantages__text-wrapper {
     width: 33.33%;
+
+    &--inversed-order {
+      order: 2;
+    }
   }
 
   .advantages__image-wrapper {
@@ -103,6 +103,11 @@
     width: 66.66%;
     min-height: 256px;
     height: auto;
+
+    &--inversed-order {
+      order: 1;
+    }
+
   }
 
   .advantages__image {
