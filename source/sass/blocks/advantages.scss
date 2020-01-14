@@ -1,25 +1,31 @@
+.advantages__wrapper {
+  margin: 41px 41px 42px 22px;
+}
+
 .advantages__list {
   @include reset-list;
+  display: flex;
 }
 
 .advantages__item {
-  background-color: white;
   text-align: center;
+  background-color: white;
 
   &--lightblue {
     background-color: #81b3d2;
   }
 
   &--grey {
-    background-color: #e6e6e6;
     padding-top: 40px;
     margin: 0 auto;
+    background-color: #e6e6e6;
   }
 }
 
-.advantages__item--lightblue:first-child {
-  padding: 61px 27px 45px 28px;
-  margin-bottom: 33px;
+.advantages__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 53px 67px 63px 68px;
 }
 
 .advantages__title {
@@ -50,29 +56,75 @@
   }
 }
 
-.advantages__item--grey:last-child {
-  margin-bottom: 42px;
-}
-
 @media (min-width: $tablet-width) {
-  .advantages__text-wrapper {
+  .advantages {
+    width: auto;
+  }
+
+  .advantages__title {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin: 63px auto 0;
+    min-height: 330px;
+  }
+
+  .advantages__section {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 100px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .advantages__list {
     display: flex;
   }
 
-  .advantages__item--grey {
+  .advantages__item {
     display: flex;
-    margin-right: 110px;
-    justify-content: space-between;
+  }
+
+  .advantages__text-wrapper {
+    width: 33.33%;
+  }
+
+  .advantages__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 66.66%;
+    min-height: 256px;
+    height: auto;
+  }
+
+  .advantages__image {
+    height: 256px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .advantages__item {
+    &--grey {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 110px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .advantages__text-wrapper {
-    display: flex;
-  }
-
-  .advantages__item--grey {
-    display: flex;
-    margin-right: 130px;
+  .advantages__item {
+    &--grey {
+      display: flex;
+      margin-right: 130px;
+    }
   }
 }

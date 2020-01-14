@@ -1,7 +1,7 @@
 .video__title--wrapper {
+  margin: 0 auto;
   padding-top: 39px;
   padding-bottom: 40px;
-  margin: 0 auto;
 }
 
 .video__title {
@@ -33,9 +33,9 @@
 
 @media (min-width: $tablet-width) {
   .video__title--wrapper {
+    margin: 0 auto;
     padding-top: 68px;
     padding-bottom: 78px;
-    margin: 0 auto;
   }
 
   .video__image {
@@ -52,9 +52,9 @@
 
 @media (min-width: $desktop-width) {
   .video__title--wrapper {
+    margin: 0 auto;
     padding-top: 72px;
     padding-bottom: 76px;
-    margin: 0 auto;
   }
 
   .video__image {

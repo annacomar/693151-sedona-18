@@ -31,12 +31,4 @@
     height: 96px;
     order: 3;
   }
-
-  .site-list__link--left:first-child {
-    order: 1;
-  }
-
-  .site-list__link--left:nth-child(2) {
-    order: 2;
-  }
 }

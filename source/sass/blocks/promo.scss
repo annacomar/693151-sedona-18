@@ -11,6 +11,8 @@
 
 .promo__image {
   order: 2;
+  width: 320px;
+  height: 3383px;
 }
 
 .promo__slogan {
@@ -42,23 +44,38 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo__image {
+    width: 768px;
+    height: 518px;
+    object-fit: contain;
+  }
+
   .promo__text {
-    padding-top: 51px;
-    margin: 0 auto;
-    margin-bottom: 55px;
- }
+    @include reset-text padding-top: 51px;
+    margin: 0 auto 55px;
+  }
 
   .promo__title {
     @include reset-text;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+
+  .promo__argument {
+    @include reset-text;
+    margin-top: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .promo__image {
+    width: 1200px;
+    height: 518px;
+    object-fit: contain;
+  }
+
   .promo__text {
     padding-top: 51px;
-    margin: 0 auto;
-    margin-bottom: 55px;
+    margin: 0 auto 55px;
   }
 
   .promo__title {
