@@ -57,9 +57,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages {
+  /*.advantages {
     width: auto;
-  }
+  }*/
 
   .advantages__title {
     width: 50%;
@@ -85,9 +85,9 @@
     }
   }
 
-  .advantages__list {
+  /*.advantages__list {
     display: flex;
-  }
+  }*/
 
   .advantages__text-wrapper {
     width: 33.33%;

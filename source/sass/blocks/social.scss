@@ -1,11 +1,19 @@
 .social__list {
   @include reset-list;
-  justify-content: space-between;
-  margin: 0;
-  margin-right: 6px;
-  padding: 0;
+  display: flex;
 }
 
 .social__list:last-child {
   margin-right: 0;
+}
+
+.social__link {
+  width: 46px;
+  height: 48px;
+  background-color: $lightblue;
+}
+
+.social__image {
+  object-fit: contain;
+  background-color: $white;
 }

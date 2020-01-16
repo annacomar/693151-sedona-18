@@ -14,7 +14,6 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  background-color: $lightblue;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 }
 
@@ -60,20 +59,22 @@
       color: rgba(0, 0, 0, 0.3);
     }
   }
-}
 
-.site-list__link[href] {
+  .site-list__link[href] {
+    padding: 25px 0 23px;
 
-  color: #766357;
+    background: none;
+    border: none;
+    color: #766357;
 
-  &:hover {
-    color: #604e43;
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
-
-  &:active {
-    color: rgba(118, 99, 87, 0.3);
-  }
-
 }
 
 @media (min-width: $desktop-width) {

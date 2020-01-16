@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  background-color: #81b3d2;
+  /*background-color: #81b3d2;*/
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
@@ -14,21 +14,25 @@
 .page-header__logo {
   width: 102px;
   height: 83px;
-  order: 2;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
     width: 187px;
     height: 97px;
-    order: 3;
   }
+
+  .page-header__logo--wrapper {
+    position: absolute;
+    top: 120;
+    bottom: 20;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
     width: 188px;
     height: 96px;
-    order: 3;
   }
 }

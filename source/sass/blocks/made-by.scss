@@ -1,8 +1,7 @@
 .made-by {
   display: flex;
   width: 140px;
-  margin: 0 auto;
-  margin-bottom: 23px;
+  margin: 0 auto 23px;
   justify-content: space-around;
 }
 
@@ -10,6 +9,18 @@
   @include reset-text;
   font-size: 14px;
   line-height: 26px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.made-by__link:hover {
+  fill: $lightblue;
+}
+
+.made-by__link:focus {
+  opacity: 0.3;
+  fill: $darkblack;
 }

@@ -2,6 +2,7 @@
   @include reset-fieldset;
   padding-top: 24px;
   margin: 0 auto 47px;
+  text-align: center;
 }
 
 .feedback__list {
@@ -107,6 +108,36 @@
     font-style: normal;
     text-transform: uppercase;
     color: $darkblack;
+  }
+}
+
+.feedback__label {
+  padding-top: 22px;
+  padding-left: 22px;
+  padding-bottom: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.feedback__input {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+
+  &--grey {
+    width: auto;
+    height: 58px;
+    background-color: $white-greyish;
+  }
+
+  &--describe-more {
+    width: 279px;
+    height: 160px;
+    margin-bottom: 51px;
+    background-color: $white-greyish;
   }
 }
 

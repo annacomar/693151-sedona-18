@@ -4,12 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title> Форма отзыва | Седона</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="container">
     <header class="page-header">
+      <div class="page-header__logo page-header__logo--wrapper">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона">
+          </picture>
+        </a>
+      </div>
       <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
         <button aria-label="Открыть меню" class="main-nav__toggle" type="button">
           <span class="visually-hidden">
@@ -29,15 +41,6 @@
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
-          <div class="page-header__logo page-header__logo--wrapper">
-            <a class="page-header__logo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-                <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона">
-              </picture>
-            </a>
-          </div>
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
@@ -53,12 +56,14 @@
       <section class="intro">
         <div class="intro__wrapper-image">
           <img class="intro__image" src="#" width="320" height="389" alt="Вид города Седона">
-          <img class="intro__slogan" src="#" width="281" height="214" alt="Слоган города Седона">
+          <picture>
+            <img class="intro__slogan" src="text-sedona.svg" width="281" height="214" alt="Слоган города Седона">
+          </picture>
         </div>
         <div class="intro__wrapper-text">
           <h1 class="intro__title">Оставьте свой отзыв</h1>
           <p class="intro__text">
-            Помогите нашим отелям стать лучше!
+            Помогите нашим отелям стать лучше! </br>
             Оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </div>
@@ -133,9 +138,11 @@
           </fieldset>
           <fieldset class="feedback__fieldset feedback__fieldset--your-emotions">
             <legend class="feedback__title feedback__title--your-emotions">Опишите свои эмоции:</legend>
-            <textarea class="feedback__label feedback__input--grey" id="emotions" name="emotions" rows="5">Опишите подробно все свои восторги</textarea>
+            <textarea class="feedback__input feedback__input--grey feedback__input--describe-more" id="emotions" name="emotions" rows="5">
+              Опишите подробно все свои восторги
+            </textarea>
           </fieldset>
-          <button class="send-review button" type="submit">Отправить отзыв</button>
+          <button class="button button--feedback" type="submit">Отправить отзыв</button>
         </form>
       </section>
     </main>
@@ -147,13 +154,34 @@
           <h3 class="visually-hidden">Седона в соцсетях</h3>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в В Твиттере</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icon-twitter.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon-twitter.svg">
+                  <img class="social__image" src="img/icon-twitter.svg" width="18" height="4" alt="Sedona в Twitter">
+                </picture>
+                <span class="visually-hidden">Мы в В Твиттере</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icon-facebook.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon-facebook.svg">
+                  <img class="social__image" src="img/icon-facebook.svg" width="9" height="18" alt="Sedona в Facebook">
+                </picture>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icon-youtube.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon-youtube.svg">
+                  <img class="social__image" src="img/icon-youtube.svg" width="20" height="14" alt="Sedona в Youtube">
+                </picture>
+                <span class="visually-hidden">Мы в Youtube<span class="visually-hidden">
+              </a>
             </li>
           </ul>
         </section>
@@ -161,7 +189,12 @@
         <div class="made-by">
           <b class="made-by__title">Разработано</b>
           <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="#" width="27" height="34" alt="HTML и CSS, уровень 2"></a>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-htmlacademy.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-htmlacademy.svg">
+              <img class="made-by__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML и CSS, уровень 2">
+            </picture>
+          </a>
         </div>
       </div>
     </footer>
