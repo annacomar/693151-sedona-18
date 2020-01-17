@@ -8,7 +8,6 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -19,11 +18,12 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона">
+            <img class="page-header__logo--image" src="img/logo-sedona-mobile.svg" alt="Седона">
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <!--main-nav- -closed, без пробела перед -closed, для закрытого меню -->
         <button aria-label="Открыть меню" class="main-nav__toggle" type="button">
           <span class="visually-hidden">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982"
@@ -56,7 +56,11 @@
     <main class="page-main">
       <section class="intro">
         <div class="intro__wrapper--image">
-          <img class="intro__image" src="#" width="320" height="389" alt="Вид города Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg">
+            <img class"intro__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="Вид города Седона">
+          </picture>
           <img class="intro__slogan" src="#" width="281" height="214" alt="Слоган города Седона">
         </div>
         <div class="intro__wrapper--text">
@@ -68,9 +72,14 @@
 
       <section class="catalog">
         <ul class="catalog__list">
+
           <li class="catalog__item photo">
             <a class="photo__image">
-              <img src="img/photo-1-mobile-jpg.png" width="280" height="280" alt="Неродные просторы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                <img class"photo__picture" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+              </picture>
             </a>
             <div class="photo__wrapper">
               <h3 class="photo__title">Неродные просторы</h3>
@@ -81,9 +90,14 @@
               </div>
             </div>
           </li>
+
           <li class="catalog__item photo">
             <a class="photo__image">
-              <img src="img/photo-2-mobile-jpg.png" width="280" height="280" alt="Местная растительность">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                <img class"photo__picture" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+              </picture>
             </a>
             <div class="photo__wrapper">
               <h3 class="photo__title">Местная растительность</h3>
@@ -94,9 +108,14 @@
               </div>
             </div>
           </li>
+
           <li class="catalog__item photo">
             <a class="photo__image">
-              <img src="img/photo-3-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                <img class"photo__picture" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+              </picture>
             </a>
             <div class="photo__wrapper">
               <h3 class="photo__title">Дорога на север
@@ -110,7 +129,11 @@
           </li>
           <li class="catalog__item photo">
             <a class="photo__image">
-              <img src="img/photo-4-mobile-jpg.png" width="280" height="280" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                <img class"photo__picture" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+              </picture>
             </a>
             <div class="photo__wrapper">
               <h3 class="photo__title">Мост дьявола
@@ -134,7 +157,12 @@
           </p>
         </div>
         <div class="video__wrapper">
-          <img class="video__image" src="#" width="321" height="201" alt="Видеопрезентация Седоны">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+            <img class"video__picture" src="img/video-mobile@1x.jpg" width="321" height="201" alt="Видеопрезентация Седоны">
+          </picture>
           <div class="video__scroller">
             <button aria-label="Промотать видео вперед или назад" class="video__scroller video__scroller--button" type="button"></button>
           </div>
@@ -155,12 +183,15 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в В Твиттере</a>
+              <span class="visually-hidden">Мы в В Твиттере</span>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <span class="visually-hidden">Мы в Фейсбуке</span>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Youtube</a>
+              <span class="visually-hidden">Мы в Youtube</span>
             </li>
           </ul>
         </section>

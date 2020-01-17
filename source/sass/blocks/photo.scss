@@ -1,3 +1,9 @@
+.photo__image {
+  width: 100%;
+  padding: 20px 22px 20px 22px;
+}
+
+
 .photo__title {
   @include reset-text;
   font-size: 14px;
