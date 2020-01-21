@@ -14,7 +14,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  //box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 }
 
 .site-list a[href] {
@@ -32,12 +32,11 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     background-color: $white;
   }
 
   .site-list__item {
-    margin-right: 25px;
+    width: 25%;
 
     &:last-child {
       margin-right: 0;
@@ -45,8 +44,7 @@
   }
 
   .site-list__link {
-    padding: 25px 0 23px;
-
+    margin: 25px 0 23px;
     background: none;
     border: none;
     color: $darkblack;
@@ -82,18 +80,8 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-grow: 1;
 
     background-color: $white;
-  }
-
-  .site-list__item {
-    margin-right: 92px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   .site-list__link {

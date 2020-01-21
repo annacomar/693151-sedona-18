@@ -24,3 +24,15 @@
   opacity: 0.3;
   fill: $darkblack;
 }
+
+@media (min-width: $tablet-width) {
+  .made-by {
+    width: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .made-by {
+    width: 400px;
+  }
+}

@@ -8,12 +8,22 @@
 }
 
 .social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: $lightblue;
 }
+@media (min-width: $tablet-width) {
+  .social__list {
+    width: 150px;
+  }
 
-.social__image {
-  object-fit: contain;
-  background-color: $white;
+}
+
+@media (min-width: $desktop-width) {
+  .social__list  {
+    width: 400px;
+  }
 }

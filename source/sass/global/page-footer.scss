@@ -49,6 +49,11 @@
     flex-wrap: wrap;
     width: 648px;
   }
+
+  .page-footer__tag {
+    width: 150px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -57,4 +62,9 @@
     /* Временно для сетки */
     min-height: 120px;
   }
+
+  .page-footer__tag {
+    width: 400px;
+  }
+
 }

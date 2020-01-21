@@ -5,7 +5,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $darkblack;
   padding-bottom: 40px;
 }
 
@@ -15,41 +15,63 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: $lighterblack;
 }
 
-.intro__wrapper-image {
+.intro__image-wrapper {
   width: 229px;
   height: 39px;
 }
 
-.intro__wrapper-text {
+.intro__text-wrapper {
   padding-top: 44px;
   margin-left: 23px;
   margin-right: 21px;
   margin-bottom: 22px;
   text-align: center;
+  border-bottom: solid $white-greyish 1px;
+
+  &--form {
+    padding-bottom: 22px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .intro__wrapper-image {
+  .intro__title {
+    &--form {
+      font-size: 30px;
+    }
+  }
+
+  .intro__text {
+    &--form {
+      width: 439px;
+    }
+  }
+
+  .intro__image-wrapper {
     width: 768px;
     height: 346px;
   }
 
-  .intro__wrapper-text {
+  .intro__text-wrapper {
     padding-top: 76px;
     margin: 0 auto 75px;
+  }
+  &--form {
+    display:flex;
+    width: 439px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .intro__wrapper-image {
+  .intro__image-wrapper {
     width: 1200px;
     height: 357px;
   }
 
-  .intro__wrapper-text {
+  .intro__text-wrapper {
     padding-top: 113px;
     margin: 0 auto 77px;
   }

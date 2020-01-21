@@ -1,5 +1,5 @@
 /*libs*/
-@import "libs/normalize.scss";
+@import "../../node_modules/normalize-scss/sass/_normalize.scss";
 
 /*variables*/
 @import "base/variables.scss";
@@ -34,3 +34,4 @@
 @import "blocks/feedback.scss";
 @import "blocks/likes.scss";
 @import "blocks/tag.scss";
+@import "blocks/map.scss";

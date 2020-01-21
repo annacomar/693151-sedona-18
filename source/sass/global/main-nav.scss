@@ -1,8 +1,6 @@
 .main-nav {
   position: relative;
-  width: auto;
   min-height: 55px;
-  margin: 0 auto;
   background-color: $lightblue;
 }
 
@@ -40,12 +38,12 @@
   width: 36px;
   height: 2px;
   background-color: $white;
-  box-shadow: 0 8px 0 0 $lightblue, 0 16px 0 0 $lightblue;
+  //box-shadow: 0 8px 0 0 $lightblue, 0 16px 0 0 $lightblue;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: $white;
-  box-shadow: 0 8px 0 0 $lightblue, 0 16px 0 0 $lightblue;
+  //box-shadow: 0 8px 0 0 $lightblue, 0 16px 0 0 $lightblue;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -130,8 +128,6 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
-    margin: 0 auto;
 
     background-color: $white;
   }
@@ -147,10 +143,13 @@
   .main-nav__toggle {
     display: none;
   }
+
+  .main-nav__item {
+    width: 25%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    width: 960px;
   }
 }
