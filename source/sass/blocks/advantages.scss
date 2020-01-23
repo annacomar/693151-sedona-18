@@ -113,9 +113,14 @@
 
 @media (min-width: $tablet-width) {
   .advantages__title {
+    @include reset-text;
     width: 50%;
     margin-bottom: 20px;
     text-align: center;
+
+    &--housing {
+      text-align: center;
+    }
   }
 
   .advantages__wrapper {
@@ -173,7 +178,7 @@
   .advantages__image {
     height: 256px;
     width: 100%;
-    object-fit: contain;
+    //object-fit: contain;
   }
 
   .advantages__item {
