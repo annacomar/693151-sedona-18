@@ -6,9 +6,11 @@
 
 .video__title {
   @include reset-text;
+  margin-bottom: 30px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+  text-transform: uppercase;
   color: $darkblack;
 }
 
@@ -17,10 +19,11 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
   color: $lighterblack;
 }
 
-.video__image {
+.video__wrapper {
   width: 321px;
   height: 201px;
 }
@@ -38,7 +41,7 @@
     padding-bottom: 78px;
   }
 
-  .video__image {
+  .video__wrapper {
     width: 648px;
     height: 499px;
   }
@@ -47,6 +50,7 @@
     width: 648px;
     height: 93px;
     opacity: 0.6;
+    background-color: transparent;
   }
 }
 
@@ -57,9 +61,11 @@
     padding-bottom: 76px;
   }
 
-  .video__image {
+  .video__wrapper {
     width: 800px;
     height: 500px;
+    margin-left: 199px;
+    margin-right: 201px;
   }
 
   .video__interface {

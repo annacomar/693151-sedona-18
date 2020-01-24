@@ -150,6 +150,52 @@
     margin-bottom: 51px;
     background-color: $white-greyish;
   }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: $white;
+    border: solid 4px #e5e5e5;
+  }
+
+  &--radio {
+    width: 46px;
+    height: 46px;
+    border: solid 5px $white-greyish;
+    background-color: $white-greyish;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:active {
+      background-color: #d5d5d5;
+    }
+  }
+
+  &--checkbox {
+    width: 46px;
+    height: 46px;
+    border: solid 5px $white-greyish;
+    background-color: $white-greyish;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:active {
+      background-color: #d5d5d5;
+    }
+
+    &--checked {
+      background-color: $white-greyish;
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
 
 .feedback__button {
@@ -171,6 +217,12 @@
     padding-right: 60px;
   }
 
+  .feedback__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .feedback__fieldset {
     @include reset-fieldset;
     display: flex;
@@ -179,12 +231,12 @@
 
     &--name-surname-patronymic {
       order: 2;
-      width: 324px;
+      width: 34.63%;
     }
 
     &--your-impressions {
       order: 1;
-      width: 324px;
+      width: 35.54%;
     }
 
     &--contact-information {
@@ -192,14 +244,15 @@
       width: 648px;
     }
 
-
     &--sightseengs-visited {
+      order: 4;
       width: 648px;
       display: flex;
       flex-wrap: wrap;
     }
 
     &--your-emotions {
+      order: 5;
       width: 648px;
     }
   }
@@ -242,6 +295,7 @@
 
   .feedback__button {
     width: 324px;
+    order: 6;
     text-align: left;
     padding: 21px 75px 21px 64px;
   }

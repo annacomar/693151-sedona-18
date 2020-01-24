@@ -1,8 +1,9 @@
 .photo__image {
   width: 100%;
-  padding: 20px 22px 20px 22px;
+  padding: 20px 22px;
+  width: 280px;
+  height: 280px;
 }
-
 
 .photo__title {
   @include reset-text;
@@ -40,6 +41,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo__image {
+    &--sunset {
+      width: 648px;
+      height: 400px;
+    }
+
+    &--bridge,
+    &--cactus,
+    &--roads {
+      width: 324px;
+      height: 267px;
+    }
+  }
+
   .photo__wrapper {
     display: flex;
     padding-top: 22px;
@@ -57,5 +72,19 @@
   .photo__wrapper {
     display: flex;
     /*transparent?? captions on the photo???*/
+  }
+
+  .photo__image {
+    &--sunset {
+      width: 1200px;
+      height: 400px;
+    }
+
+    &--bridge,
+    &--cactus,
+    &--roads {
+      width: 400px;
+      height: 267px;
+    }
   }
 }
