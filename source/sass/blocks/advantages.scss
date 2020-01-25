@@ -17,6 +17,8 @@
 }
 
 .advantages__item {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: white;
 
@@ -33,7 +35,6 @@
 }
 
 .advantages__icon {
-  position: absolute;
   fill: $lightblue;
 
   &--housing {
@@ -124,7 +125,6 @@
 @media (min-width: $tablet-width) {
   .advantages__title {
     @include reset-text;
-    width: 50%;
     margin-bottom: 20px;
     text-align: center;
 
@@ -176,11 +176,19 @@
   }
 
   .advantages__text-wrapper {
+    padding: 0;
     width: 33.33%;
 
     &--inversed-order {
+      margin: 46px 47px;
       order: 2;
     }
+
+    &--real-city {
+      margin: 46px 47px;
+      text-align: center;
+    }
+
   }
 
   .advantages__image-wrapper {
@@ -263,5 +271,10 @@
     &--souvenirs {
       text-align: center;
     }
+  }
+
+  .advantages__text-wrapper {
+    margin: 53px 67px 61px;
+
   }
 }

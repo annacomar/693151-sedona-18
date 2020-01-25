@@ -27,12 +27,18 @@
 
 @media (min-width: $tablet-width) {
   .made-by {
-    width: 150px;
+    //width: 150px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .made-by {
+    display:flex;
+    justify-content: flex-end;
     width: 400px;
+  }
+  .made-by__icon {
+    margin-left: 11px;
+    margin-right: 120px;
   }
 }
